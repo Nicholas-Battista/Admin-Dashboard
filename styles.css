@@ -189,6 +189,12 @@ div {
     0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
 }
 
+.spacing:hover {
+  cursor: pointer;
+  color: var(--purple);
+  background-color: var(--lavender);
+}
+
 .spacing h3 {
   margin: 0;
 }
