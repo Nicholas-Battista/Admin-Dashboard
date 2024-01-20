@@ -140,6 +140,39 @@ div {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
   background-color: var(--purple);
+  color: var(--tan);
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  width: 100%;
+  padding-left: 5%;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5%;
+}
+
+.spacing {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5%;
+}
+
+.spacing h3 {
+  margin: 0;
+}
+
+.links,
+.support {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .content {
@@ -163,4 +196,18 @@ svg:hover {
   height: 50px;
   width: 50px;
   border-radius: 50%;
+}
+
+.monitor {
+  height: 70px;
+  width: 70px;
+  filter: invert(81%) sepia(55%) saturate(289%) hue-rotate(347deg)
+    brightness(97%) contrast(91%);
+}
+
+.spacing img {
+  filter: invert(81%) sepia(55%) saturate(289%) hue-rotate(347deg)
+    brightness(97%) contrast(91%);
+  height: 35px;
+  width: 35px;
 }
