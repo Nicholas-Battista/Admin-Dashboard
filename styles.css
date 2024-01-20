@@ -95,7 +95,20 @@ div {
   align-items: center;
   justify-content: flex-start;
   gap: 2%;
-  width: 100%;
+  width: 40%;
+  transition: 0.3s ease;
+  border-radius: 1rem;
+}
+
+.hello:hover {
+  background-color: var(--gray);
+  border-radius: 1rem;
+  padding-left: 5px;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
 }
 
 .hello img {
@@ -135,6 +148,13 @@ div {
   background-color: var(--purple);
   color: var(--lavender);
   cursor: pointer;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+.buttons button:active {
+  transform: scale(0.95);
 }
 
 .sidebar {
@@ -147,6 +167,7 @@ div {
   gap: 10%;
   width: 100%;
   padding-left: 5%;
+  padding-right: 5%;
 }
 
 .title {
@@ -163,6 +184,9 @@ div {
   align-items: center;
   justify-content: flex-start;
   gap: 5%;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
 }
 
 .spacing h3 {
@@ -203,8 +227,8 @@ svg:hover {
 }
 
 .monitor {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   filter: invert(94%) sepia(17%) saturate(333%) hue-rotate(27deg)
     brightness(103%) contrast(94%);
 }
