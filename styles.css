@@ -8,10 +8,10 @@ body {
 
 :root {
   --tan: #ecce8e;
-  --purple: #502f4c;
+  --purple: #1f271b;
   --green: #4f5d2f;
-  --gray: #96939b;
-  --lavender: #cfcfea;
+  --gray: #71816d;
+  --lavender: #edf7d2;
 }
 
 div {
@@ -51,6 +51,7 @@ div {
   grid-template-rows: 1fr;
   align-items: center;
   justify-items: start;
+  padding-bottom: 10px;
 }
 
 .search-contents {
@@ -140,7 +141,7 @@ div {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
   background-color: var(--purple);
-  color: var(--tan);
+  color: var(--lavender);
   display: flex;
   flex-direction: column;
   gap: 10%;
@@ -177,6 +178,9 @@ div {
 
 .content {
   background-color: var(--gray);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 0.1fr;
 }
 
 svg {
@@ -201,13 +205,13 @@ svg:hover {
 .monitor {
   height: 70px;
   width: 70px;
-  filter: invert(81%) sepia(55%) saturate(289%) hue-rotate(347deg)
-    brightness(97%) contrast(91%);
+  filter: invert(94%) sepia(17%) saturate(333%) hue-rotate(27deg)
+    brightness(103%) contrast(94%);
 }
 
 .spacing img {
-  filter: invert(81%) sepia(55%) saturate(289%) hue-rotate(347deg)
-    brightness(97%) contrast(91%);
+  filter: invert(94%) sepia(17%) saturate(333%) hue-rotate(27deg)
+    brightness(103%) contrast(94%);
   height: 35px;
   width: 35px;
 }
