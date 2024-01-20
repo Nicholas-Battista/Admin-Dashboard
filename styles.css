@@ -213,6 +213,21 @@ div {
   grid-template-rows: 1fr 1fr 0.1fr;
 }
 
+.cards {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 2rem 1rem;
+  padding: 1rem 2rem;
+}
+
+.card {
+  border: 1px solid black;
+}
+
 svg {
   height: 30px;
   width: 30px;
