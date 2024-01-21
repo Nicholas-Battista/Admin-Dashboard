@@ -176,6 +176,7 @@ div {
   justify-content: flex-start;
   align-items: center;
   gap: 5%;
+  padding-top: 2rem;
 }
 
 .spacing {
@@ -362,6 +363,10 @@ svg {
 
 svg:hover {
   cursor: pointer;
+}
+
+svg:active {
+  transform: scale(0.95);
 }
 
 .nav-contents img {
