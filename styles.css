@@ -278,6 +278,9 @@ div {
   padding: 1rem 2rem;
   background-color: var(--lavender);
   border-radius: 1rem;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
 }
 
 .announcement {
@@ -291,6 +294,55 @@ div {
 
 .announcement:last-of-type {
   border: none;
+}
+
+.trending {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  align-self: self-end;
+  margin: 1rem 2rem;
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+  height: 80%;
+  background-color: var(--lavender);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.trend-title {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.user-pics {
+  grid-template-columns: 1 / 2;
+  grid-row: 1 / 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.user-info {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.user-info p {
+  padding: 0;
+  margin: 0;
+}
+
+.user-info p:first-of-type {
+  font-weight: bold;
+  color: var(--purple);
 }
 
 svg {
@@ -324,4 +376,11 @@ svg:hover {
     brightness(103%) contrast(94%);
   height: 35px;
   width: 35px;
+}
+
+.user-pics img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 1px solid var(--purple);
 }
