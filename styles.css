@@ -239,6 +239,7 @@ div {
   background-color: var(--lavender);
   display: grid;
   grid-template-rows: 1fr 2fr 0.75fr;
+  transition: 0.3s ease;
 }
 
 .card h5 {
@@ -256,6 +257,11 @@ div {
   height: 30px;
   width: 30px;
   border-radius: 1rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
 }
 
 .card img:hover {
