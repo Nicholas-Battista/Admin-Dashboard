@@ -372,10 +372,24 @@ svg:hover {
 }
 
 .spacing img {
-  filter: invert(94%) sepia(17%) saturate(333%) hue-rotate(27deg)
-    brightness(103%) contrast(94%);
+  filter: brightness(0) saturate(100%) invert(94%) sepia(17%) saturate(333%)
+    hue-rotate(27deg) brightness(103%) contrast(94%);
   height: 35px;
   width: 35px;
+}
+
+.spacing:hover img {
+  filter: brightness(0) saturate(100%) invert(11%) sepia(28%) saturate(482%)
+    hue-rotate(56deg) brightness(102%) contrast(93%);
+}
+
+a {
+  text-decoration: none;
+  color: var(--lavender);
+}
+
+.spacing:hover a {
+  color: var(--purple);
 }
 
 .user-pics img {
