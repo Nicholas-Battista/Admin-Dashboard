@@ -271,6 +271,28 @@ div {
   justify-content: flex-end;
 }
 
+.announcements {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 2rem;
+  padding: 1rem 2rem;
+  background-color: var(--lavender);
+  border-radius: 1rem;
+}
+
+.announcement {
+  border-bottom: 1px solid var(--gray);
+}
+
+.announcement p:first-of-type {
+  color: var(--purple);
+  font-weight: bold;
+}
+
+.announcement:last-of-type {
+  border: none;
+}
+
 svg {
   height: 30px;
   width: 30px;
